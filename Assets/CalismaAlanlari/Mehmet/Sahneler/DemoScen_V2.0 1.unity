@@ -2435,6 +2435,12 @@ Transform:
   - {fileID: 172079840}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &220404418 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 4680818797271520422, guid: dc3f4998066447e4ebccba9fefe0f278,
+    type: 3}
+  m_PrefabInstance: {fileID: 551025789}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &228501300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5787,7 +5793,7 @@ PrefabInstance:
     - target: {fileID: 4680818797271520422, guid: dc3f4998066447e4ebccba9fefe0f278,
         type: 3}
       propertyPath: m_projectionMatrixMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6735,6 +6741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596446c32fbaedd478a69f90dd03faf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCamera: {fileID: 220404418}
 --- !u!4 &662787925
 Transform:
   m_ObjectHideFlags: 0
@@ -17217,7 +17224,6 @@ GameObject:
   - component: {fileID: 1655432634}
   - component: {fileID: 1655432636}
   - component: {fileID: 1655432635}
-  - component: {fileID: 1655432637}
   m_Layer: 9
   m_Name: Main Terrain
   m_TagString: Untagged
@@ -17299,19 +17305,6 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
---- !u!114 &1655432637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655432633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea92ca859c42dc84abb41ed5cb54f7c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 1
 --- !u!1001 &1675223187
 PrefabInstance:
   m_ObjectHideFlags: 0
