@@ -6,7 +6,7 @@ public class DurmaADurum : IAnimayonDurumlari
 {
     public void Giris(DusmanIA dusmanIA)
     {
-
+        dusmanIA.animator.SetInteger("Durum",0);
     }
     public void Guncelle(DusmanIA dusmanIA)
     {

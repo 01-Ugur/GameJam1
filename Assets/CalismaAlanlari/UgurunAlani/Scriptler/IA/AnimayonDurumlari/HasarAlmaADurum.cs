@@ -6,7 +6,7 @@ public class HasarAlmaADurum : IAnimayonDurumlari
 {
     public void Giris(DusmanIA dusmanIA)
     {
-
+        dusmanIA.animator.SetTrigger("HasarAlma");
     }
     public void Guncelle(DusmanIA dusmanIA)
     {
