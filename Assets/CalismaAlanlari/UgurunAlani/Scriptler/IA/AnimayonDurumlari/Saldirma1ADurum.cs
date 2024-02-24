@@ -6,7 +6,7 @@ public class Saldirma1ADurum : IAnimayonDurumlari
 {
     public void Giris(DusmanIA dusmanIA)
     {
-        dusmanIA.animator.SetInteger("Durum",2);
+        dusmanIA.animator.SetTrigger("Saldir");
     }
     public void Guncelle(DusmanIA dusmanIA)
     {

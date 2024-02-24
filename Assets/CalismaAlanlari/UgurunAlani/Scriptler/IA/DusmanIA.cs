@@ -1,4 +1,6 @@
 using JUTPS;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 using UnityEngine.AI;
 public class DusmanIA : MonoBehaviour
@@ -56,15 +58,26 @@ public class DusmanIA : MonoBehaviour
     }
     void Update()
     {
+        if (AnlikDavranisDurumu.GetType() == new Olum().GetType())
+        {
+            return;
+        }
         if (Hedef != null)
         {
-            HedefUzakligi = (transform.position - Hedef.position).magnitude;
+            HedefUzakligi = Vector3.Distance(transform.position,Hedef.transform.position);
         }
         else
         {
             HedefUzakligi = 1000f;
         }
-
+        if (agent.velocity.magnitude >= 0.1f) // hýzýna gore yuru yada dur
+        {
+            AnimasyonDurumuDegistir(new YurumeADurum());
+        }
+        else
+        {
+            AnimasyonDurumuDegistir(new DurmaADurum());
+        }
         AnlikDavranisDurumu.Guncelle(this);
         AnlikAnimasyonDurumu.Guncelle(this);
     }
@@ -84,10 +97,13 @@ public class DusmanIA : MonoBehaviour
     public bool Radar()
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position + MerkezOfeset, RadarYariCapi, RadarKatmani);
-        if (0 < colliders.Length)
+        for (int i = 0; i < colliders.Length; i++)
         {
-            Hedef = colliders[0].transform;
-            return true;
+            if (colliders[i].tag == "Player")
+            {
+                Hedef = colliders[i].transform;
+                return true;
+            }
         }
         return false;
     }
@@ -105,10 +121,6 @@ public class DusmanIA : MonoBehaviour
         if (Saldiri1AnlikBeklemeSuresi < SaldirilarArasiDelay)
         {
             Saldiri1BeklemeSuresi = SaldirilarArasiDelay;
-        }
-        if (EskiAnimasyonDurumu.GetType() != new Saldirma1ADurum().GetType())
-        {
-            AnimasyonDurumuDegistir(EskiAnimasyonDurumu);
         }
     }
     public void RasgeleDolasNA()

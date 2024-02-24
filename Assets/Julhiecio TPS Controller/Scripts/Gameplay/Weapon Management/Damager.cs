@@ -1,10 +1,8 @@
-﻿using System.Collections;
+﻿using JUTPS.ArmorSystem;
+using JUTPS.FX;
+using JUTPSEditor.JUHeader;
 using System.Collections.Generic;
 using UnityEngine;
-using JUTPS.ArmorSystem;
-using JUTPS.FX;
-
-using JUTPSEditor.JUHeader;
 
 namespace JUTPS
 {
@@ -78,7 +76,7 @@ namespace JUTPS
                     rb.isKinematic = false;
                 }
             }
- 
+
             if (RaycastingMode == false || RaycastDistance == 0) return;
             //Debug.Log("Is raycasting mode active");
             RaycastHit hit;
@@ -134,10 +132,18 @@ namespace JUTPS
                         if (collision.gameObject.GetComponentInChildren<DamageableBodyPart>() != null) return;
                     }
 
-                    DoDamage(collision, Damage, HitParticlesList, HitSoundsAudioSource);
-                    Collided = true;
-                    Invoke(nameof(DisableCollidedState), 0.1f);
-                    DisableDamagingForSeconds(HitMinTime);
+                    DusmanIA dusmanIA = collision.gameObject.GetComponent<DusmanIA>();
+                    if (dusmanIA != null)
+                    {
+                        dusmanIA.HasarAl(Damage);
+                    }
+                    else
+                    {
+                        DoDamage(collision, Damage, HitParticlesList, HitSoundsAudioSource);
+                        Collided = true;
+                        Invoke(nameof(DisableCollidedState), 0.1f);
+                        DisableDamagingForSeconds(HitMinTime);
+                    }
                 }
             }
         }
@@ -151,11 +157,19 @@ namespace JUTPS
                     {
                         if (other.gameObject.GetComponentInChildren<DamageableBodyPart>() != null) return;
                     }
+                    DusmanIA dusmanIA = other.gameObject.GetComponent<DusmanIA>();
+                    if (dusmanIA != null)
+                    {
+                        dusmanIA.HasarAl(Damage);
+                    }
+                    else
+                    {
+                        DoDamage(other, Damage, HitParticlesList, HitSoundsAudioSource);
+                        Collided = true;
+                        Invoke(nameof(DisableCollidedState), 0.1f);
+                        DisableDamagingForSeconds(HitMinTime);
+                    }
 
-                    DoDamage(other, Damage, HitParticlesList, HitSoundsAudioSource);
-                    Collided = true;
-                    Invoke(nameof(DisableCollidedState), 0.1f);
-                    DisableDamagingForSeconds(HitMinTime);
                 }
             }
         }

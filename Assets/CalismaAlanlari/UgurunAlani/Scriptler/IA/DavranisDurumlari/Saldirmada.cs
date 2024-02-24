@@ -28,11 +28,12 @@ public class Saldirmada : IDavranisDurumu
                 dusmanIA.AnimasyonDurumuDegistir(new Saldirma1ADurum());
             }
         }
-        if (dusmanIA.HedefUzakligi<=dusmanIA.HedefiBirakmaYaricapi)
-        {
-            dusmanIA.Hedef = null;
-            dusmanIA.DavranisDurumuDegistir(new Dolasmada());
-        }
+        
+        //if (dusmanIA.HedefiBirakmaYaricapi<=dusmanIA.HedefUzakligi)
+        //{
+        //    dusmanIA.Hedef = null;
+        //    dusmanIA.DavranisDurumuDegistir(new Dolasmada());
+        //}
     }
     public void Cikis(DusmanIA dusmanIA)
     {

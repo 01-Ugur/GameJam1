@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 4342de85f052c9a4abd8b9d92c670779, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465822, g: 0.4964165, b: 0.5748201, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &92565904
+--- !u!1001 &54449133
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -131,27 +131,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2983202903967463154, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
-        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
-        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
-        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
-        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'mixamo.com'\n\tFrom
-        animation clip 'mixamo.com'"
-      objectReference: {fileID: 0}
     - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_Name
-      value: RenkDusmani (7)
+      value: RenkDusmani (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.8846183
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
@@ -161,7 +154,7 @@ PrefabInstance:
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.4442141
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
@@ -338,157 +331,9 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 0742c39b51fdb814093e4c241e1aed7a, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 91db79ddaa4d4ec409db121673a13531, type: 2}
   m_BuildHeightMesh: 0
---- !u!1001 &262943486
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2983202903967463154, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
-        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
-        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
-        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
-        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'mixamo.com'\n\tFrom
-        animation clip 'mixamo.com'"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_Name
-      value: RenkDusmani (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
---- !u!1001 &448855357
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_Name
-      value: RenkDusmani (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
---- !u!1001 &685869195
+--- !u!1001 &536511871
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -501,10 +346,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: RenkDusmani (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.8846183
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
@@ -514,7 +364,7 @@ PrefabInstance:
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.4442141
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
@@ -556,112 +406,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
---- !u!1 &780934549
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 780934552}
-  - component: {fileID: 780934551}
-  - component: {fileID: 780934550}
-  - component: {fileID: 780934553}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &780934550
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780934549}
-  m_Enabled: 1
---- !u!20 &780934551
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780934549}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &780934552
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780934549}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &780934553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780934549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1001 &1252415802
+--- !u!1001 &580617864
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -674,10 +419,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: RenkDusmani (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.8846183
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
@@ -687,7 +437,372 @@ PrefabInstance:
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0.4442141
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
+--- !u!1001 &609508134
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Name
+      value: RenkDusmani (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.8846183
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.4442141
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
+--- !u!1001 &772358968
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Name
+      value: RenkDusmani (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.8846183
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.4442141
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
+--- !u!1001 &1055540939
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Name
+      value: RenkDusmani (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.8846183
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.4442141
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
+--- !u!1001 &1257389115
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Name
+      value: RenkDusmani (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.8846183
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.4442141
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
+--- !u!1001 &1272568190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Name
+      value: RenkDusmani
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.8846183
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.4442141
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
@@ -836,7 +951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1391304397
+--- !u!1001 &1488525647
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -844,27 +959,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2983202903967463154, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
-        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
-        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
-        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
-        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'mixamo.com'\n\tFrom
-        animation clip 'mixamo.com'"
-      objectReference: {fileID: 0}
     - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_Name
-      value: RenkDusmani (9)
+      value: RenkDusmani (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.8846183
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
@@ -874,7 +982,7 @@ PrefabInstance:
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.4442141
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
@@ -916,223 +1024,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
---- !u!1001 &1460830192
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_Name
-      value: RenkDusmani (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
---- !u!1001 &1604034958
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_Name
-      value: RenkDusmani (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
---- !u!1001 &1800504774
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2983202903967463154, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
-        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
-        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
-        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
-        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'mixamo.com'\n\tFrom
-        animation clip 'mixamo.com'"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_Name
-      value: RenkDusmani (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
---- !u!1001 &1856447797
+--- !u!1001 &1761685209
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1145,10 +1037,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: RenkDusmani (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.8846183
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
@@ -1158,7 +1055,7 @@ PrefabInstance:
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.4442141
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
@@ -1200,7 +1097,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
---- !u!1001 &2077095671
+--- !u!1001 &1942637011
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1208,27 +1105,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2983202903967463154, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
-        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
-        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
-        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
-        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'mixamo.com'\n\tFrom
-        animation clip 'mixamo.com'"
-      objectReference: {fileID: 0}
     - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_Name
-      value: RenkDusmani (10)
+      value: RenkDusmani (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.8846183
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
@@ -1238,7 +1128,7 @@ PrefabInstance:
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.4442141
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
@@ -1280,7 +1170,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
---- !u!1001 &3413400381919395510
+--- !u!1001 &1975628070
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1288,20 +1178,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2983202903967463154, guid: cc6e3342dd11ff64892b9100896146f6,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_Name
-      value: RenkDusmani
+      value: RenkDusmani (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.8846183
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
@@ -1311,7 +1201,80 @@ PrefabInstance:
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0.4442141
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc6e3342dd11ff64892b9100896146f6, type: 3}
+--- !u!1001 &2072905019
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Name
+      value: RenkDusmani (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714544706620428928, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.8846183
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.4442141
       objectReference: {fileID: 0}
     - target: {fileID: 5396543649132745087, guid: cc6e3342dd11ff64892b9100896146f6,
         type: 3}
@@ -1357,18 +1320,18 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 780934552}
   - {fileID: 1335595113}
   - {fileID: 245694466}
-  - {fileID: 3413400381919395510}
-  - {fileID: 1856447797}
-  - {fileID: 1252415802}
-  - {fileID: 1460830192}
-  - {fileID: 1604034958}
-  - {fileID: 685869195}
-  - {fileID: 448855357}
-  - {fileID: 92565904}
-  - {fileID: 1800504774}
-  - {fileID: 1391304397}
-  - {fileID: 2077095671}
-  - {fileID: 262943486}
+  - {fileID: 1272568190}
+  - {fileID: 1761685209}
+  - {fileID: 580617864}
+  - {fileID: 54449133}
+  - {fileID: 2072905019}
+  - {fileID: 536511871}
+  - {fileID: 1942637011}
+  - {fileID: 1975628070}
+  - {fileID: 772358968}
+  - {fileID: 1055540939}
+  - {fileID: 609508134}
+  - {fileID: 1257389115}
+  - {fileID: 1488525647}
