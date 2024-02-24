@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2138627745116659336}
   - component: {fileID: 6384121336489607256}
   - component: {fileID: 3789943107380610498}
+  - component: {fileID: 3963467768998483762}
   m_Layer: 0
   m_Name: SM_Conifer_11_LOD3
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504340300825800000}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.00000006717942, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: -0.45, z: -0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8206158732477148881}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2138627745116659336
 MeshFilter:
@@ -62,8 +63,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0ddfabb3251c7c94b97758676b9e8ad1, type: 2}
-  - {fileID: 2100000, guid: 10142d4f45a0552439cc070d1aef7c94, type: 2}
+  - {fileID: 2100000, guid: b69c3e7f2460a704296173551054a032, type: 2}
+  - {fileID: 2100000, guid: b69c3e7f2460a704296173551054a032, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93,12 +94,34 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504340300825800000}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Radius: 0.35
   m_Height: 25.65
   m_Direction: 1
   m_Center: {x: 0, y: 9.39, z: 0.06}
+--- !u!114 &3963467768998483762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504340300825800000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea92ca859c42dc84abb41ed5cb54f7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &5168294244134411458
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,6 +146,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5168294244134411458}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -134,7 +158,6 @@ Transform:
   - {fileID: 6215343736345949536}
   - {fileID: 5852589067701113489}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!205 &8759993263601956885
 LODGroup:
@@ -183,6 +206,7 @@ GameObject:
   - component: {fileID: 8543913610522674335}
   - component: {fileID: 414537071877244038}
   - component: {fileID: 3789943107380610499}
+  - component: {fileID: 5780353862852912651}
   m_Layer: 0
   m_Name: SM_Conifer_11_LOD2
   m_TagString: Untagged
@@ -197,13 +221,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5413014297937822698}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.00000006717942, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.45, z: 0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8206158732477148881}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8543913610522674335
 MeshFilter:
@@ -233,8 +257,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0ddfabb3251c7c94b97758676b9e8ad1, type: 2}
-  - {fileID: 2100000, guid: 10142d4f45a0552439cc070d1aef7c94, type: 2}
+  - {fileID: 2100000, guid: b69c3e7f2460a704296173551054a032, type: 2}
+  - {fileID: 2100000, guid: b69c3e7f2460a704296173551054a032, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -264,12 +288,34 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5413014297937822698}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Radius: 0.35
   m_Height: 25.65
   m_Direction: 1
   m_Center: {x: 0, y: 9.39, z: 0.06}
+--- !u!114 &5780353862852912651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5413014297937822698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea92ca859c42dc84abb41ed5cb54f7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &7166248969355844259
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +328,7 @@ GameObject:
   - component: {fileID: 1223960779137531818}
   - component: {fileID: 7203480390164630147}
   - component: {fileID: 3789943107380610496}
+  - component: {fileID: 7770518113182075846}
   m_Layer: 0
   m_Name: SM_Conifer_11_LOD1
   m_TagString: Untagged
@@ -296,13 +343,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7166248969355844259}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.00000006717942, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.45, z: 0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8206158732477148881}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1223960779137531818
 MeshFilter:
@@ -332,8 +379,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0ddfabb3251c7c94b97758676b9e8ad1, type: 2}
-  - {fileID: 2100000, guid: 10142d4f45a0552439cc070d1aef7c94, type: 2}
+  - {fileID: 2100000, guid: b69c3e7f2460a704296173551054a032, type: 2}
+  - {fileID: 2100000, guid: b69c3e7f2460a704296173551054a032, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -363,12 +410,34 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7166248969355844259}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Radius: 0.35
   m_Height: 25.65
   m_Direction: 1
   m_Center: {x: 0, y: 9.39, z: 0.06}
+--- !u!114 &7770518113182075846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7166248969355844259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea92ca859c42dc84abb41ed5cb54f7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &7741277881202239993
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +450,7 @@ GameObject:
   - component: {fileID: 8120580558074660610}
   - component: {fileID: 8169263728352969906}
   - component: {fileID: 3789943107380610509}
+  - component: {fileID: 3354249879785905242}
   m_Layer: 0
   m_Name: SM_Conifer_11_LOD4
   m_TagString: Untagged
@@ -395,13 +465,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7741277881202239993}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.00000006717942, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.45, z: 0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8206158732477148881}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8120580558074660610
 MeshFilter:
@@ -431,8 +501,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 55416802e9a33694e96939cef4508d21, type: 2}
-  - {fileID: 2100000, guid: 10142d4f45a0552439cc070d1aef7c94, type: 2}
+  - {fileID: 2100000, guid: b69c3e7f2460a704296173551054a032, type: 2}
+  - {fileID: 2100000, guid: b69c3e7f2460a704296173551054a032, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -462,12 +532,34 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7741277881202239993}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Radius: 0.35
   m_Height: 25.65
   m_Direction: 1
   m_Center: {x: 0, y: 9.39, z: 0.06}
+--- !u!114 &3354249879785905242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7741277881202239993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea92ca859c42dc84abb41ed5cb54f7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &9078149074126541959
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +572,7 @@ GameObject:
   - component: {fileID: 6051103167450072396}
   - component: {fileID: 860756628827658562}
   - component: {fileID: 3789943107380610497}
+  - component: {fileID: 8655649712348559881}
   m_Layer: 0
   m_Name: SM_Conifer_11_LOD0
   m_TagString: Untagged
@@ -494,13 +587,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9078149074126541959}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8206158732477148881}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6051103167450072396
 MeshFilter:
@@ -530,8 +623,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 10142d4f45a0552439cc070d1aef7c94, type: 2}
-  - {fileID: 2100000, guid: 0ddfabb3251c7c94b97758676b9e8ad1, type: 2}
+  - {fileID: 2100000, guid: b69c3e7f2460a704296173551054a032, type: 2}
+  - {fileID: 2100000, guid: b69c3e7f2460a704296173551054a032, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -561,9 +654,31 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9078149074126541959}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Radius: 0.35
   m_Height: 25.65
   m_Direction: 1
   m_Center: {x: 0, y: 9.39, z: 0.06}
+--- !u!114 &8655649712348559881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9078149074126541959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea92ca859c42dc84abb41ed5cb54f7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
