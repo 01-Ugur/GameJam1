@@ -1718,7 +1718,7 @@ GameObject:
   - component: {fileID: 9213943321262479051}
   - component: {fileID: 8943103339242247823}
   - component: {fileID: 3959941815906257538}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: RenkDusmani
   m_TagString: Untagged
   m_Icon: {fileID: 0}
