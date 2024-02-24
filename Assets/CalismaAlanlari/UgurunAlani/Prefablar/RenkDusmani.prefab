@@ -1754,7 +1754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxCan: 100
   AnlikCan: 100
-  Hiz: 2
+  Hiz: 1.5
   RadarYariCapi: 15
   HedefiBirakmaYaricapi: 20
   RadarKatmani:
@@ -1789,7 +1789,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 3.5
+  m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
