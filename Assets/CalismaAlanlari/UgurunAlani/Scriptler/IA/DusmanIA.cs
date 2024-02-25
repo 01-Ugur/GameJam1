@@ -12,8 +12,8 @@ public class DusmanIA : MonoBehaviour
     [SerializeField] private float MaxCan;
     [SerializeField] private float AnlikCan;
     [SerializeField] private float Hiz;
-    public float RadarYariCapi;
-    public float HedefiBirakmaYaricapi;
+    public float RadarYariCapi=10;
+    public float HedefiBirakmaYaricapi=15;
     [SerializeField] private LayerMask RadarKatmani;
     [SerializeField] private Vector3 MerkezOfeset;
     public float HedefUzakligi;
@@ -21,14 +21,15 @@ public class DusmanIA : MonoBehaviour
     public float SaldirilarArasiDelay;
     public bool SaldiriAktif;
     public float Saldiri1Hasari;
+    public int renkTasiSayisi=5;
     public float Saldiri1BeklemeSuresi;
     public float Saldiri1AnlikBeklemeSuresi;
     public float Saldiri1Menzil;
     [Header("DolasmaParametreler")]
-    public float DolasýmBSKatsayisi = 2;
-    public float MaxHedefVardýkdanSornaBS = 5;
-    public float MinHedefVardýkdanSornaBS = 2;
-    private float AnlikHedefVardýkdanSornaBS;
+    public float DokasimBasiKaksayisi = 2;
+    public float MaxHedefVardiktanSonraBS = 5;
+    public float MinHedefVardiktanSornaBS = 2;
+    private float AnlikHedefVardikdanSornaBS;
     public float RasgeleDolasmaYaricapi = 7;
     private float AnlikHedefeVarmaSuresi;
     public int AnlikDolasmaIndeksi = 0;
@@ -41,9 +42,11 @@ public class DusmanIA : MonoBehaviour
     public CapsuleCollider capsuleCollider;
 
     public Rigidbody[] rigidbodies;
+    GameManager gameManager;
     void Start()
     {
         rigidbodies = GetComponentsInChildren<Rigidbody>();
+        gameManager= FindObjectOfType<GameManager>();
         ToggleRagdoll(false);
 
         AnlikCan = MaxCan;
@@ -70,7 +73,7 @@ public class DusmanIA : MonoBehaviour
         {
             HedefUzakligi = 1000f;
         }
-        if (agent.velocity.magnitude >= 0.1f) // hýzýna gore yuru yada dur
+        if (agent.velocity.magnitude >= 0.1f) // hï¿½zï¿½na gore yuru yada dur
         {
             AnimasyonDurumuDegistir(new YurumeADurum());
         }
@@ -131,19 +134,19 @@ public class DusmanIA : MonoBehaviour
 
         if (Distance <= 0.3f || AnlikHedefeVarmaSuresi <= 0)
         {
-            AnlikHedefVardýkdanSornaBS -= Time.deltaTime;
+            AnlikHedefVardikdanSornaBS -= Time.deltaTime;
 
             if (AnlikAnimasyonDurumu.GetType() != new HasarAlmaADurum().GetType())
             {
                 AnimasyonDurumuDegistir(new DurmaADurum());
             }
-            if (AnlikHedefVardýkdanSornaBS <= 0)
+            if (AnlikHedefVardikdanSornaBS <= 0)
             {
                 AnimasyonDurumuDegistir(new YurumeADurum());
 
                 hedefKonum = NavMeshEnyakinNoktaBul(transform.position, RasgeleDolasmaYaricapi);
-                AnlikHedefVardýkdanSornaBS = UnityEngine.Random.Range(MinHedefVardýkdanSornaBS, MaxHedefVardýkdanSornaBS);
-                AnlikHedefeVarmaSuresi = Vector3.Distance(transform.position, hedefKonum) * agent.speed * DolasýmBSKatsayisi;
+                AnlikHedefVardikdanSornaBS = UnityEngine.Random.Range(MinHedefVardiktanSornaBS, MaxHedefVardiktanSonraBS);
+                AnlikHedefeVarmaSuresi = Vector3.Distance(transform.position, hedefKonum) * agent.speed * DokasimBasiKaksayisi;
                 agent.destination = hedefKonum;
             }
         }
@@ -173,18 +176,30 @@ public class DusmanIA : MonoBehaviour
     }
     public void Olum()
     {
+        int i;
+        i= UnityEngine.Random.Range(1,6);
+        if(i>2)
+        {
+            
+            gameManager.setInstantity(3,renkTasiSayisi);
+        }
+        else
+        {
+            gameManager.setInstantity(i,renkTasiSayisi);
+        }
         Destroy(capsuleCollider);
         Destroy(agent);
         Destroy(animator);
         ToggleRagdoll(true);// ragdolu ac
         DunyaRenkleriYonetici.Instance.RasgeleRenkArtdir();
         Destroy(gameObject, 20);
+        
     }
     public void ToggleRagdoll(bool state)
     {
         foreach (var rb in rigidbodies)
         {
-            rb.isKinematic = !state; // Ragdoll aktifse, kinematik olmamalý
+            rb.isKinematic = !state; // Ragdoll aktifse, kinematik olmamalï¿½
         }
     }
     private void OnDrawGizmosSelected()

@@ -1778,8 +1778,8 @@ MonoBehaviour:
   MaxCan: 100
   AnlikCan: 100
   Hiz: 1.5
-  RadarYariCapi: 15
-  HedefiBirakmaYaricapi: 20
+  RadarYariCapi: 10
+  HedefiBirakmaYaricapi: 15
   RadarKatmani:
     serializedVersion: 2
     m_Bits: 512
@@ -1791,9 +1791,9 @@ MonoBehaviour:
   Saldiri1BeklemeSuresi: 4
   Saldiri1AnlikBeklemeSuresi: 0
   Saldiri1Menzil: 1.25
-  "Dolas\u0131mBSKatsayisi": 2
-  "MaxHedefVard\u0131kdanSornaBS": 5
-  "MinHedefVard\u0131kdanSornaBS": 2
+  DokasimBasiKaksayisi: 2
+  MaxHedefVardiktanSonraBS: 5
+  MinHedefVardiktanSornaBS: 2
   RasgeleDolasmaYaricapi: 7
   AnlikDolasmaIndeksi: 0
   Hedef: {fileID: 0}
