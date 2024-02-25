@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuYonetici : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class MenuYonetici : MonoBehaviour
     {
         
     }
+    public void BackToMenu(){
+        SceneManager.LoadScene("start");
+    }
+    
     public void OyunuKapat()
     {
         Application.Quit();
