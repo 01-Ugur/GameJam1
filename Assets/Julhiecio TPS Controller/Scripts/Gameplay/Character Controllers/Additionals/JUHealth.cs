@@ -25,6 +25,17 @@ namespace JUTPS
         [JUHeader("Stats")]
         public bool IsDead;
 
+        public void Update()
+        {
+            if (Health<MaxHealth)
+            {
+                Health += Time.deltaTime;
+                if (Health>=MaxHealth)
+                {
+                    Health = MaxHealth;
+                }
+            }
+        }
         void Start()
         {
             LimitHealth();
