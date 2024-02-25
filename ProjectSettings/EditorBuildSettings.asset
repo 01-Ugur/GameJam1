@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/CalismaAlanlari/UgurunAlani/Sahneler/AnaSahne.unity
     guid: 8b5829567c2da084f9c79254785adf2d
+  - enabled: 1
+    path: Assets/CalismaAlanlari/UgurunAlani/Sahneler/Start.unity
+    guid: d99f569582796b2429d21f4d329c0dad
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2ec44aec0dd0a564fa6de8ea4b3c5852,
       type: 2}

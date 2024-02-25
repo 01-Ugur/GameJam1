@@ -10085,6 +10085,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 704932834}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &711483178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 711483180}
+  - component: {fileID: 711483179}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &711483179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711483178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a7fdaf0d59d884c9ebb5fa362cf6cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &711483180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711483178}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1370.251, y: 926.195, z: 79.49909}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!222 &713382824
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24575,7 +24619,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405156391}
+      - m_Target: {fileID: 711483179}
         m_TargetAssemblyTypeName: MenuYonetici, Assembly-CSharp
         m_MethodName: BackToMenu
         m_Mode: 1
@@ -24880,7 +24924,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405156391}
+      - m_Target: {fileID: 711483179}
         m_TargetAssemblyTypeName: MenuYonetici, Assembly-CSharp
         m_MethodName: OyunuKapat
         m_Mode: 1
@@ -67705,3 +67749,4 @@ SceneRoots:
   - {fileID: 1259517913}
   - {fileID: 1271309280}
   - {fileID: 1493340871}
+  - {fileID: 711483180}

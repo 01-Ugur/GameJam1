@@ -15,9 +15,9 @@ public class MenuYonetici : MonoBehaviour
         
     }
     public void BackToMenu(){
-        SceneManager.LoadScene("start");
+        SceneManager.LoadScene("Start");
     }
-    
+
     public void OyunuKapat()
     {
         Application.Quit();
