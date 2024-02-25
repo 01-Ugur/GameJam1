@@ -13,6 +13,7 @@ public class Painting : MonoBehaviour
     GameObject myPrefab;
     public Camera mainCamera;
     Color cameraBackgroundColor;
+    
 
 
     
@@ -24,6 +25,10 @@ public class Painting : MonoBehaviour
           cameraBackgroundColor=mainCamera.backgroundColor;
           gameManager= FindObjectOfType<GameManager>();
           myMaterials=new Material[5];
+          for (int i = 0; i < 5; i++)
+          {
+            DontThePaint(i);
+          }
        
       
 
@@ -53,7 +58,7 @@ public class Painting : MonoBehaviour
            
         myMaterials[index] = Resources.Load<Material>("BlueM");
             myMaterials[index].SetFloat("_Blend",(gameManager.intensity[index]/maxIntensity));
-            mainCamera.backgroundColor=new Color(0.529f, 0.808f, 0.922f);;
+            mainCamera.backgroundColor=new Color(0.529f, 0.808f, 0.922f);
 
             break;
             case 3:
@@ -75,35 +80,41 @@ public class Painting : MonoBehaviour
 
           }
         }
-        else
+        
+        
+        
+    
+   }
+   public void DontThePaint(int index){
+    if(gameManager.intensity[index]<maxIntensity)
         {
           switch (index)
           {
             case 0:
             
         myMaterials[index] = Resources.Load<Material>("RedM");
-            myMaterials[index].SetFloat("_Blend",(gameManager.intensity[index]/maxIntensity));
+            myMaterials[index].SetFloat("_Blend",(0));
             break;
             case 1:
             
         myMaterials[index] =  Resources.Load<Material>("GreenM");
-            myMaterials[index].SetFloat("_Blend",(gameManager.intensity[index]/maxIntensity));
+            myMaterials[index].SetFloat("_Blend",(0));
             break;
             case 2:
             
         myMaterials[index] =Resources.Load<Material>("BlueM");
-            myMaterials[index].SetFloat("_Blend",(gameManager.intensity[index]/maxIntensity));
+            myMaterials[index].SetFloat("_Blend",(0));
             mainCamera.backgroundColor=cameraBackgroundColor;
             break;
              case 3:
            
         myMaterials[index] = Resources.Load<Material>("BrownM");
-            myMaterials[index].SetFloat("_Blend",(gameManager.intensity[index]/maxIntensity));
+            myMaterials[index].SetFloat("_Blend",(0));
             break;
             case 4:
            
         myMaterials[index] = Resources.Load<Material>("RockM");
-            myMaterials[index].SetFloat("_Blend",(gameManager.intensity[index]/maxIntensity));
+            myMaterials[index].SetFloat("_Blend",(0));
             break;
             default: 
             Debug.Log("index yanlış ");
@@ -113,9 +124,6 @@ public class Painting : MonoBehaviour
 
           }
         }
-        
-        
-    
    }
 
 }
