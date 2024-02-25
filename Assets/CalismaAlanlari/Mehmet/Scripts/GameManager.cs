@@ -8,10 +8,14 @@ public class GameManager : MonoBehaviour
 { public int[] intensity;
 public GameObject[] colorBars;
 public GameObject[] colorTexts;
+public GameObject panel;
 float maxIntensity=100.0f;
 
 private void Start() {
     
+}
+public void OpenPanel(){
+    panel.SetActive(true);
 }
 
 public void setInstantity(int index, int count)
