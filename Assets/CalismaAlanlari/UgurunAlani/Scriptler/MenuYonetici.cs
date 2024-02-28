@@ -16,6 +16,7 @@ public class MenuYonetici : MonoBehaviour
     }
     public void BackToMenu(){
         SceneManager.LoadScene("Start");
+        Debug.Log("start sahnesi açıldı");
     }
 
     public void OyunuKapat()

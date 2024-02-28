@@ -17,7 +17,7 @@ public class UIManager2 : MonoBehaviour
     void Awake()
     {
         // Singleton pattern to ensure only one instance exists across scenes
-        if (instance == null)
+       /* if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
@@ -25,7 +25,7 @@ public class UIManager2 : MonoBehaviour
         else
         {
             Destroy(gameObject);
-        }
+        }*/
     }
     private void Start() {
          audioSource = GetComponent<AudioSource>();
@@ -70,6 +70,7 @@ public class UIManager2 : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("AnaSahne");
+        Debug.Log("ana sahne açıldı");
     }
     public void QuitGame()
     {

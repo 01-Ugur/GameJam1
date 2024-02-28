@@ -191,7 +191,7 @@ public class DusmanIA : MonoBehaviour
         Destroy(agent);
         Destroy(animator);
         ToggleRagdoll(true);// ragdolu ac
-        DunyaRenkleriYonetici.Instance.RasgeleRenkArtdir();
+       // DunyaRenkleriYonetici.Instance.RasgeleRenkArtdir();
         Destroy(gameObject, 20);
         
     }
