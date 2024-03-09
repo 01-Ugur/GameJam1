@@ -64,6 +64,7 @@ public class Painting : MonoBehaviour
             case 3:
            
         myMaterials[index] = Resources.Load<Material>("BrownM");
+        //mainCamera.GetComponent<GrayScale>().CloseCameraGrayScale();
             myMaterials[index].SetFloat("_Blend",(gameManager.intensity[index]/maxIntensity));
             if(gameManager.intensity[index]>maxIntensity)
             {
