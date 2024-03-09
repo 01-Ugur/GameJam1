@@ -12,6 +12,14 @@ public class MenuYonetici : MonoBehaviour
     }
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Backspace))
+        {
+            BackToMenu();
+        }
+        if(Input.GetKeyDown(KeyCode.F5))
+        {
+            Quit();
+        }
         
     }
     public void BackToMenu(){
@@ -19,7 +27,7 @@ public class MenuYonetici : MonoBehaviour
         Debug.Log("start sahnesi açıldı");
     }
 
-    public void OyunuKapat()
+    public void Quit()
     {
         Application.Quit();
     }
