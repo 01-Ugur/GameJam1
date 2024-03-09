@@ -139,7 +139,8 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: 3.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: 2ec44aec0dd0a564fa6de8ea4b3c5852, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -844,13 +845,7 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
-    Build: 0
-    Game Performance: 0
-    Legacy Analytics: 0
-    Purchasing: 0
-    UDP: 0
     UNet: 1
-    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -870,11 +865,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 13958601-31c4-444d-8028-c6652d66b8ab
+  cloudProjectId: 17f282d7-1a6c-4b4c-857a-adcb4d54d225
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: GameJam11
-  organizationId: mehmetyalcin0040
+  organizationId: oyunlarunitykutusu
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
