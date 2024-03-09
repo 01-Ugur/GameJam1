@@ -8,7 +8,6 @@ public class GrayScale : MonoBehaviour
     public float intensityX,intensityY,intensityZ;
     float brownInstensity=0;
     float x,y,z;
-    int maxIntensity=99;
 
     Material _material;
     GameManager gameManager;
@@ -24,6 +23,7 @@ public class GrayScale : MonoBehaviour
     }
     
     private void Update() {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
        if(intensityX>=maxIntensity)
 =======
@@ -32,6 +32,9 @@ public class GrayScale : MonoBehaviour
 
         /*if(intensityX>=100)
 >>>>>>> Stashed changes
+=======
+        if(intensityX>=100)
+>>>>>>> parent of 26356a1 (renklendirme kodu eski haline getirildi)
         {
             
             _material.SetFloat("_IntensityX",1);
@@ -40,14 +43,14 @@ public class GrayScale : MonoBehaviour
         {
            _material.SetFloat("_IntensityX",0);
         }
-        if(intensityY>=maxIntensity)
+        if(intensityY>=100)
         {
             _material.SetFloat("_IntensityY",1);
         }
         else{
             _material.SetFloat("_IntensityY",0);
         }
-        if(intensityZ>=maxIntensity)
+        if(intensityZ>=100)
         {
             _material.SetFloat("_IntensityZ",1);
         }
@@ -59,6 +62,7 @@ public class GrayScale : MonoBehaviour
         Debug.Log("Cong");*/
         
     }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     public void RemoweGrayFilter()
     {
@@ -77,6 +81,8 @@ public class GrayScale : MonoBehaviour
     }
     
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 26356a1 (renklendirme kodu eski haline getirildi)
     private void OnRenderImage(RenderTexture src, RenderTexture dest) {
         Graphics.Blit(src,dest,_material);
         

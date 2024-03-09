@@ -17,7 +17,7 @@ public class Painting : MonoBehaviour
 
 
     
-   float maxIntensity=99;
+   float maxIntensity=100;
    void Start(){
      // myMaterial = Resources.Load<Material>(materialPath);
 
@@ -66,11 +66,6 @@ public class Painting : MonoBehaviour
         myMaterials[index] = Resources.Load<Material>("BrownM");
         //mainCamera.GetComponent<GrayScale>().CloseCameraGrayScale();
             myMaterials[index].SetFloat("_Blend",(gameManager.intensity[index]/maxIntensity));
-            if(gameManager.intensity[index]>maxIntensity)
-            {
-              mainCamera.GetComponent<GrayScale>().RemoweGrayFilter();
-            }
-            
             break;
             case 4:
            
