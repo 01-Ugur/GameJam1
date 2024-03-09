@@ -12,21 +12,13 @@ public class MenuYonetici : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Backspace))
-        {
-            BackToMenu();
-        }
-        if(Input.GetKeyDown(KeyCode.F5))
-        {
-            Quit();
-        }
         
     }
     public void BackToMenu(){
         SceneManager.LoadScene("Start");
     }
 
-    public void Quit()
+    public void OyunuKapat()
     {
         Application.Quit();
     }

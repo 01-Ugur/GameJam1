@@ -10,20 +10,14 @@ public class KursorYonetici : MonoBehaviour
         Cursor.visible = false; // Fare imlecini gizle
     }
 
-    // Fare imlecini aï¿½
+    // Fare imlecini aç
     public void UnlockCursor()
     {
         Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true; // Fare imlecini gï¿½ster
+        Cursor.visible = true; // Fare imlecini göster
     }
     private void Start()
     {
         UnlockCursor();
-    }
-    private void Update() {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            LockCursor();
-        }
     }
 }
